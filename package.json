@@ -4,6 +4,7 @@
   "description": "",
   "main": "server/index.js",
   "dependencies": {
+    "clarifai": "^2.1.8",
     "hapi": "^16.3.0",
     "knock-knock": "^2.0.0"
   },
