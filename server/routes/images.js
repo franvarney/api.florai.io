@@ -17,5 +17,10 @@ module.exports = [
         }
       }
     }
+  },
+  {
+    method: 'GET',
+    path: '/images/{concept}',
+    handler: ImagesHandler.search
   }
 ];

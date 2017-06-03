@@ -26,6 +26,18 @@ class Clarifai {
         (err) => callback(err)
       );
   }
+
+  search(concept, callback) {
+    this.app.inputs.search({
+      concept: {
+        name: concept
+      }
+    })
+      .then(
+        (response) => callback(null, response),
+        (err) => callback(err)
+      );
+  }
 }
 
 module.exports = Clarifai;
