@@ -11,6 +11,9 @@ module.exports = [
       validate: {
         payload: {
           url: Joi.string().uri().required()
+        },
+        query: {
+          action: Joi.string().allow(['add', 'predict']).default('predict')
         }
       }
     }

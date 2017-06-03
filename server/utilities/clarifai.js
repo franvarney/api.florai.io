@@ -11,6 +11,14 @@ class Clarifai {
     this.model = model || ClarifaiSdk.GENERAL_MODEL;
   }
 
+  add(input, callback) {
+    this.app.inputs.create(input)
+      .then(
+        (response) => callback(null, response),
+        (err) => callback(err)
+      );
+  }
+
   predict(url, callback) {
     this.app.models.predict(this.model, url)
       .then(
