@@ -1,4 +1,5 @@
-const Images = require('./images');
+const Inputs = require('./inputs');
+const Models = require('./models');
 const Ping = require('./ping');
 
-module.exports = [].concat(Images, Ping);
+module.exports = [].concat(Inputs, Models, Ping);
