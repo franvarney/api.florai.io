@@ -6,6 +6,7 @@
   "dependencies": {
     "clarifai": "^2.1.8",
     "hapi": "^16.3.0",
+    "joi": "^10.5.2",
     "knock-knock": "^2.0.0"
   },
   "devDependencies": {},
